@@ -1,4 +1,4 @@
-package com.quasiris.qsfexample;
+package com.quasiris.qsf;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
