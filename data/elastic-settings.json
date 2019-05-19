@@ -9,6 +9,22 @@
               "type": "text",
               "analyzer": "suggest_analyzer",
               "search_analyzer": "suggest_query_analyzer"
+            },
+            "text": {
+              "type": "text"
+            }
+          }
+        },
+        "brand": {
+          "type": "keyword",
+          "fields": {
+            "suggest": {
+              "type": "text",
+              "analyzer": "suggest_analyzer",
+              "search_analyzer": "suggest_query_analyzer"
+            },
+            "text": {
+              "type": "text"
             }
           }
         }

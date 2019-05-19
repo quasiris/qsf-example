@@ -1,0 +1,2 @@
+app:
+  elasticBaseUrl: "http://localhost:9200/qsf-example"

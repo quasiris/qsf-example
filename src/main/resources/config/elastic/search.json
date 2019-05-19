@@ -1,0 +1,26 @@
+{
+  "size": 10,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "dis_max": {
+            "queries": [
+              {
+                "query_string": {
+                  "_name": "edismax",
+                  "query": "${q}",
+                  "default_operator": "AND",
+                  "fields": [
+                    "gtin_name.text"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "from": 0
+}
